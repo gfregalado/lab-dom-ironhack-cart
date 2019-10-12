@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script type="text/javascript" src="./js/index.js"></script>
-  <title>Ironhack cart</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="text/javascript" src="./js/index.js"></script>
+    <title>Ironhack cart</title>
+  </head>
+  <body>
+    <h1>Ironhack<br />Merchandising Shop</h1>
+
+    <!------------    Product 1     ------------>
+
+    <div class="product">
+      <div>
+        <span class="productName">IronBubble-head</span>
+      </div>
+      <div><span>$</span><span class="amountForProduct">25</span></div>
+      <div>
+        <lable for="quantity">Quantity</lable>
+        <input class="quantity" name="Quantity" type="text" min="0" max="100" />
+      </div>
+      <div class="resultSpace">
+        <span>$</span><span class="result">0</span><span>.00</span>
+      </div>
+      <div>
+        <button class="btn-delete">Delete</button>
+      </div>
+    </div>
+
+    <!------------    Product 2     ------------>
+
+    <div class="product">
+      <div>
+        <span class="productName">Ironshirt</span>
+      </div>
+      <div><span>$</span><span class="amountForProduct">15</span></div>
+      <div>
+        <lable for="quantity">Quantity</lable>
+        <input class="quantity" name="Quantity" type="text" min="0" max="100" />
+      </div>
+      <div class="resultSpace">
+        <span>$</span><span class="result">0</span><span>.00</span>
+      </div>
+      <div>
+        <button class="btn-delete">Delete</button>
+      </div>
+    </div>
+
+    <!------------    Product X     ------------>
+
+    <div id="calc-prices-button" class="success-btn">
+      <button class="btn-success">
+        Calculate Prices
+      </button>
+    </div>
+    <h1>Total Price: $<span class="totalResult">0</span><span>.00</span></h1>
+  </body>
 </html>
